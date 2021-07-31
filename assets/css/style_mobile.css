@@ -1,0 +1,68 @@
+@media screen and (max-width: 450px) {
+    .container {
+        padding: 0 5%;
+        margin: 0;
+    } .nav, .autc {
+        display: none;
+    } section {
+        display: block;
+        font-weight: bolder;
+        font-size: 35px;
+        margin-left: auto;
+    } .badan {
+        display: block;
+    } h1 > span {
+        padding-top: -20px;
+        font-size: 220%;
+    } .content > h2 {
+        margin-top: 21px;
+        font-size: 29px;
+        line-height: unset;
+        margin-bottom: 40px;
+    } .content > h1 {
+        line-height: 60px;
+        font-size: 220%;
+    } .content > p {
+        width: 100%;
+        margin: unset;
+        font-family: poppins;
+        font-size: 13px;
+        margin-top: -20px;
+    } .gambar > img {
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        z-index: -1;
+        opacity: 10%;
+    } .toolbar > a {
+        font-size: 13px;
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    } .toolbar {
+        width: 100%;
+        margin: auto;
+    } .pager {
+        display: none;
+    }
+
+    /* toogle bar */
+    section:active {
+        animation-name:rotate;
+        animation-duration:0.5s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rotate{
+        from{
+          transfrom:rotate(0deg);
+        }
+        to{
+          transform:rotate(180deg);
+        }
+    }
+    .navmobile {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}

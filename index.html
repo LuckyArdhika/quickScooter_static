@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style_desktop_global.css">
+  <link rel="stylesheet" href="/assets/css/style_mobile.css">
+  <link rel="stylesheet" href="/assets/css/style_tab.css">
+  <title>Quick Scooter</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <img src="/assets/img/logoSkooter.png" alt="quick scooter logo">
+      <div class="nav" id="nav">
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Contact Us</a>
+      </div>
+      <div class="autc" id="autc">
+        <a href="">Login</a>
+        <a href="" class="book">Book Scooter</a>
+      </div>
+      <!-- menu code in mobile ver -->
+      <section onclick="navbar()">&#9776;</section>
+    </div>
+    <div class="badan">
+      <div class="content">
+      <h2>Fair price ride</h2>
+      <h1>Rent our <span>Scooter</span></h1>
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+      <div class="toolbar">
+        <a href="">Location</a>
+        <span class="pager">|</span>
+        <a href="">Pickup Date</a>
+        <span class="pager">|</span>
+        <a href="">Kilometers</a>
+        <a href="" class="booking">Book Scooter</a>
+      </div>
+    </div>
+    <div class="gambar">
+      <img class="pscooter" src="/assets/img/naikSkooter.png" alt="people and scooter">
+    </div>
+    </div>
+  </div>
+  <script>
+    // navbar
+      function navbar(){
+      var nav = document.getElementById("nav");
+      var naf = document.getElementById("autc");
+
+      if(nav.classList.contains("navmobile")){
+        nav.classList.remove("navmobile");
+        naf.classList.remove("navmobile");
+      } else {
+        nav.classList.add("navmobile");
+        naf.classList.add("navmobile");
+      }
+    }
+  </script>
+</body>
+</html>
